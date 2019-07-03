@@ -21,36 +21,79 @@ public class Kara {
 		String zv = "*";
 		int vr = 0;
 
-//		for (vr = 1; vr <= num/2; vr++) {
-//			System.out.print("ena");}
-//			for (vr = 1; vr <= num; vr++) 
-//				System.out.println("dva");
-
 		for (vr = 1; vr <= num / 2; vr++)
 			System.out.print(pr);
+
 		{
 			for (int i = 1; i <= (num % 2); i++)
 				System.out.print(zv);
 
 		}
 
-//		for (vr = 1; vr >= num; vr++) {
-//			for (num = 1; num > vr; num++) {
-//				System.out.print(" ");
-//			}
-//			for (int i = 1; i < (vr * 2); i++) {
-//				System.out.print("*");
-//			}
-//			System.out.println();
-//		}
+		System.out.println("");
 
-//		for (vr = 1; vr <= num; vr++) {
-//			for (int i = 1; i < num; i++)
+		for (vr = 1; vr <= (num / 2) - 1; vr++)
+			System.out.print(pr);
+
+		{
+			for (int i = 1; i <= (num % 2) + 2; i++)
+				System.out.print(zv);
+
+		}
+		
+		System.out.println("");
+
+		for (vr = 1; vr <= (num / 2) - 2; vr++)
+			System.out.print(pr);
+
+		{
+			for (int i = 1; i <= (num % 2) + 4; i++)
+				System.out.print(zv);
+
+		}
+//		
+		
+//		int k = 2;
+//		int j = 1;
+//		
+//		if (vr<num) {
+//			 for (vr = 1; vr <= num / 2; vr++)
 //				System.out.print(pr);
-//			for (int j = 1; j < (num * 2); j = +2)
-//				System.out.print(zv);
-//			System.out.println();
+//
+//			{
+//				for (int i = 1; i <= (num % 2); i++)
+//					System.out.print(zv);
+//
+//			}
+//			
+//			System.out.println("");
+//			
+//			do { 
+//				int num1 = num / 2 - j;
+//				for (vr = 1; vr <= num1; vr++)
+//				
+//				System.out.print(pr);
+//				
+//
+//			{
+//				int num2 = num % 2 + 2;
+//				for (int i = 1; i <= num2; i++)
+//					
+//					System.out.print(zv);
+//				
+//
+//			}
+//			
+//			
+//
+//			System.out.println("");
+//			vr++;
+//			
+//			} while (vr==num);
+//			
 //		}
+		
+		
 
 	}
 }
