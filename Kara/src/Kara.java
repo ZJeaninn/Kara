@@ -22,6 +22,7 @@ public class Kara {
 		int vr = 0;
 
 		for (vr = 1; vr <= num / 2; vr++)
+
 			System.out.print(pr);
 
 		{
@@ -40,7 +41,7 @@ public class Kara {
 				System.out.print(zv);
 
 		}
-		
+
 		System.out.println("");
 
 		for (vr = 1; vr <= (num / 2) - 2; vr++)
@@ -51,8 +52,9 @@ public class Kara {
 				System.out.print(zv);
 
 		}
+
 //		
-		
+
 //		int k = 2;
 //		int j = 1;
 //		
@@ -92,8 +94,6 @@ public class Kara {
 //			} while (vr==num);
 //			
 //		}
-		
-		
 
 	}
 }
