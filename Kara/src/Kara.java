@@ -21,37 +21,101 @@ public class Kara {
 		String zv = "*";
 		int vr = 0;
 
+		int j;
+		int k;
+		int i;
+
+//		do {
 		for (vr = 1; vr <= num / 2; vr++)
 
-			System.out.print(pr);
-
 		{
-			for (int i = 1; i <= (num % 2); i++)
+			// prva vrsta
+			for (i = 1; i <= num / 2; i++)
+				System.out.print(pr);
+			i = num / 2 - 1;
+			{
+				for (j = 1; j <= num % 2; j++)
+					j = ((num % 2) + j * 2);
+
 				System.out.print(zv);
 
+				System.out.println("");
+			}
 		}
 
-		System.out.println("");
+		// sredina
+		for (vr = 1; vr <= num; vr++)
+			System.out.print(zv);
 
-		for (vr = 1; vr <= (num / 2) - 1; vr++)
-			System.out.print(pr);
+//				{
+//					// druga vrsta
+//					for (vr = 1; vr <= (num / 2) - j; vr++)
+//						System.out.print(pr);
+//					
+//					
+//					for (int i = 1; i <= (num % 2) + k; i++)
+//						System.out.print(zv);
+//					System.out.println("");
+//					
 
-		{
-			for (int i = 1; i <= (num % 2) + 2; i++)
-				System.out.print(zv);
+//					{
+//						// tretja vrsta
+//						for (vr = 1; vr <= (num / 2) - 1 - j; vr++)
+//
+//							System.out.print(pr);
+//						for (int i = 1; i <= (num % 2) + 2 * k; i++)
+//
+//							System.out.print(zv);
+//						System.out.println("");
+//
+//						// cetrta vrsta
+//						{
+//							for (vr = 1; vr <= (num / 2) - 2 - j; vr++)
+//
+//								System.out.print(pr);
+//							for (int i = 1; i <= (num % 2) + 3 * k; i++)
+//
+//								System.out.print(zv);
+//							System.out.println("");
+//						}
+//					}
 
-		}
-
-		System.out.println("");
-
-		for (vr = 1; vr <= (num / 2) - 2; vr++)
-			System.out.print(pr);
-
-		{
-			for (int i = 1; i <= (num % 2) + 4; i++)
-				System.out.print(zv);
-
-		}
+//		} while (vr == num); {
+//			vr++;
+//		}
+//		for (vr = 1; vr <= (num % 2); vr++) {
+//			for (vr = 1; vr <= num / 2; vr++)
+//
+//				System.out.print(pr);
+//
+//			{
+//				for (int i = 1; i <= (num % 2); i++)
+//					System.out.print(zv);
+//
+//			}
+//
+//			System.out.println("");
+//
+//			for (vr = 1; vr <= (num / 2) - j; vr++)
+//				System.out.print(pr);
+//
+//			{
+//				for (int i = 1; i <= (num % 2) + 2; i++)
+//					System.out.print(zv);
+//
+//			}
+//
+//			System.out.println("");
+//
+//			for (vr = 1; vr <= (num / 2) - 2; vr++)
+//				System.out.print(pr);
+//
+//			{
+//				for (int i = 1; i <= (num % 2) + 2 * k; i++)
+//					System.out.print(zv);
+//
+//			}
+//		}
 
 //		
 
