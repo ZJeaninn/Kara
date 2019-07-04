@@ -27,20 +27,13 @@ public class Kara {
 
 //		do {
 		for (vr = 1; vr <= num / 2; vr++)
-
 		{
-			// prva vrsta
-			for (i = 1; i <= num / 2; i++)
-				System.out.print(pr);
-			i = num / 2 - 1;
-			{
-				for (j = 1; j <= num % 2; j++)
-					j = ((num % 2) + j * 2);
-
-				System.out.print(zv);
-
-				System.out.println("");
+			for (i = 1; i <= (num-vr); i++)
+			    System.out.print(pr);
+			for (j = 1; j <= vr; j++)
+			     System.out.print(zv);
 			}
+			System.out.println("");
 		}
 
 		// sredina
