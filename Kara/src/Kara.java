@@ -21,31 +21,64 @@ public class Kara {
 		String zv = "*";
 		int vr = 0;
 
-		int j;
+		int j=0;
 		int k;
 		int i;
 
+		 for ( vr = 1; vr <= num/2+1; vr++) {
+	            for (i = 1; i <= (num-vr); i++) {
+	            	
+	                System.out.print(" ");
+	            }
+
+	            for (k = 1; k <= vr * 2 - 1; k++) {
+	                System.out.print("*");
+	            }
+	            System.out.println();
+
+	        }
+		 
+		 for(vr=(num/2); vr >=1; vr--) {
+			 
+	         for (i = 1; i <= (num-vr); i++) {
+	            	
+	                System.out.print(" ");
+	            }
+
+	            for (k = 1; k <= vr * 2 - 1; k++) {
+	                System.out.print("*");
+	            }
+	            System.out.println();
+			 
+		 }
+	        
+//	        for ( vr = 1; vr <= num; vr++)
+//				System.out.print("*");
+//	        
+//	        System.out.println("");
+//		
+		
 //		do {
-		for (vr = 1; vr <= num / 2; vr++)
-
-		{
-			// prva vrsta
-			for (i = 1; i <= num / 2; i++)
-				System.out.print(pr);
-			i = num / 2 - 1;
-			{
-				for (j = 1; j <= num % 2; j++)
-					j = ((num % 2) + j * 2);
-
-				System.out.print(zv);
-
-				System.out.println("");
-			}
-		}
-
-		// sredina
-		for (vr = 1; vr <= num; vr++)
-			System.out.print(zv);
+//		for (vr = 1; vr <= num / 2; vr++)
+//
+//		{
+//			// prva vrsta
+//			for (i = 1; i <= num / 2; i++)
+//				System.out.print(pr);
+//			i = num / 2 - i;
+//
+//			for (j = 1; j <= num / 2*2; j++)
+//				j = (num % 2) + (j * 2);
+//
+//			System.out.print(zv);
+//
+//			System.out.println("");
+//
+//		}
+//
+//		// sredina
+//		for (vr = 1; vr <= num; vr++)
+//			System.out.print(zv);
 
 //				{
 //					// druga vrsta
