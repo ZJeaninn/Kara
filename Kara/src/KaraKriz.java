@@ -80,7 +80,6 @@ public class KaraKriz {
 			System.out.println("");
 
 		}
-		
 
 		// spodnji del
 
@@ -116,33 +115,6 @@ public class KaraKriz {
 			System.out.println();
 
 		}
-		
-		
-//		
-//		for (vr = (num / 2); vr >= 1; vr--) {
-//
-//			for (i = 1; i <= (num - vr); i++) {
-//
-//				System.out.print(" ");
-//			}
-//
-//			for (k = 1; k <= 1; k++) {
-//				System.out.print("*");
-//
-//			}
-//
-//			for (int h = 2; h <= vr * 2 - 2; h++) {
-//				System.out.print(" ");
-//
-//			}
-//
-//			for (int l = 2; l <= 36 - 34; l++) {
-//
-//				System.out.print("*");
-//			}
-//
-//			System.out.println();
-//
-//		}
+
 	}
 }
