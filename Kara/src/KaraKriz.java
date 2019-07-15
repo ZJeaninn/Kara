@@ -40,19 +40,18 @@ public class KaraKriz {
 
 			}
 
-			for (int n = 1; n <= 1; n++) {
-				System.out.print("|");
-			}
+			if (vr != 1) {
+				for (int n = 1; n <= 1; n++) {
+					System.out.print("|");
+				}
 
-			for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
-				System.out.print(" ");
+				for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
+					System.out.print(" ");
 
-			}
-			for (int l = 2; l <= 2; l++) {
+				}
 
 				System.out.print("*");
 			}
-
 			System.out.println();
 
 		}
@@ -98,16 +97,15 @@ public class KaraKriz {
 				System.out.print(" ");
 
 			}
+			if (vr != 1) {
+				for (int n = 1; n <= 1; n++) {
+					System.out.print("|");
+				}
 
-			for (int n = 1; n <= 1; n++) {
-				System.out.print("|");
-			}
+				for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
+					System.out.print(" ");
 
-			for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
-				System.out.print(" ");
-
-			}
-			for (int l = 2; l <= 2; l++) {
+				}
 
 				System.out.print("*");
 			}

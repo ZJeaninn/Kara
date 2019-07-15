@@ -17,47 +17,43 @@ public class Kara {
 		System.out.println("Izbrano stevilo je: " + num);
 
 		// zvezdice
-		String pr = " ";
-		String zv = "*";
 		int vr = 0;
-
-		int j=0;
 		int k;
 		int i;
 
-		 for ( vr = 1; vr <= num/2+1; vr++) {
-	            for (i = 1; i <= (num-vr); i++) {
-	            	
-	                System.out.print(" ");
-	            }
+		for (vr = 1; vr <= num / 2 + 1; vr++) {
+			for (i = 1; i <= (num - vr); i++) {
 
-	            for (k = 1; k <= vr * 2 - 1; k++) {
-	                System.out.print("*");
-	            }
-	            System.out.println();
+				System.out.print(" ");
+			}
 
-	        }
-		 
-		 for(vr=(num/2); vr >=1; vr--) {
-			 
-	         for (i = 1; i <= (num-vr); i++) {
-	            	
-	                System.out.print(" ");
-	            }
+			for (k = 1; k <= vr * 2 - 1; k++) {
+				System.out.print("*");
+			}
+			System.out.println();
 
-	            for (k = 1; k <= vr * 2 - 1; k++) {
-	                System.out.print("*");
-	            }
-	            System.out.println();
-			 
-		 }
-	        
+		}
+
+		for (vr = (num / 2); vr >= 1; vr--) {
+
+			for (i = 1; i <= (num - vr); i++) {
+
+				System.out.print(" ");
+			}
+
+			for (k = 1; k <= vr * 2 - 1; k++) {
+				System.out.print("*");
+			}
+			System.out.println();
+
+		}
+
 //	        for ( vr = 1; vr <= num; vr++)
 //				System.out.print("*");
 //	        
 //	        System.out.println("");
 //		
-		
+
 //		do {
 //		for (vr = 1; vr <= num / 2; vr++)
 //

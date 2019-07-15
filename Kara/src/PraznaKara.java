@@ -39,11 +39,9 @@ public class PraznaKara {
 				System.out.print(" ");
 
 			}
-			
-			for(int l = 2; l<=2; l++) {
 
-			System.out.print("*");
-			}
+			if (vr != 1)
+				System.out.print("*");
 
 			System.out.println();
 
@@ -65,11 +63,9 @@ public class PraznaKara {
 				System.out.print(" ");
 
 			}
-			
-			for(int l = 2; l<=36-34; l++) {
 
-			System.out.print("*");
-			}
+			if (vr != 1)
+				System.out.print("*");
 
 			System.out.println();
 
