@@ -1,7 +1,12 @@
+package Funkcije;
+
 import java.util.Scanner;
 
-public class KaraKriz {
-
+public class KaraKrizFunkcija {
+	void Narisi (int presledek, int zvezda, int minus, int crta) {
+		
+		
+	}
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		int num = 0;

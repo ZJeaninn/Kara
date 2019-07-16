@@ -1,6 +1,8 @@
+package Funkcije;
+
 import java.util.Scanner;
 
-public class KaraKriz {
+public class PraznaKaraFunkcija {
 
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
@@ -25,7 +27,7 @@ public class KaraKriz {
 		int k;
 		int i;
 
-		for (vr = 1; vr <= num / 2; vr++) {
+		for (vr = 1; vr <= num / 2 + 1; vr++) {
 			for (i = 1; i <= (num - vr); i++) {
 
 				System.out.print(" ");
@@ -36,54 +38,20 @@ public class KaraKriz {
 
 			}
 
-			for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
+			for (int h = 2; h <= vr * 2 - 2; h++) {
 				System.out.print(" ");
 
 			}
 
-			if (vr != 1) {
-				for (int n = 1; n <= 1; n++) {
-					System.out.print("|");
-				}
-
-				for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
-					System.out.print(" ");
-
-				}
-
+			if (vr != 1)
 				System.out.print("*");
-			}
+
 			System.out.println();
 
 		}
-
-		// sredina
-		for (vr = 1; vr <= 1; vr++) {
-			for (i = 1; i <= (num - vr) - (num / 2); i++) {
-
-				System.out.print(" ");
-			}
-
-			for (k = 1; k <= 1; k++) {
-				System.out.print("*");
-
-			}
-
-			for (int h = 1; h <= num - 2; h++) {
-				System.out.print("-");
-
-			}
-			for (int l = 2; l <= 2; l++) {
-
-				System.out.print("*");
-			}
-			System.out.println("");
-
-		}
-
-		// spodnji del
 
 		for (vr = (num / 2); vr >= 1; vr--) {
+
 			for (i = 1; i <= (num - vr); i++) {
 
 				System.out.print(" ");
@@ -94,26 +62,16 @@ public class KaraKriz {
 
 			}
 
-			for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
+			for (int h = 2; h <= vr * 2 - 2; h++) {
 				System.out.print(" ");
 
 			}
-			if (vr != 1) {
-				for (int n = 1; n <= 1; n++) {
-					System.out.print("|");
-				}
 
-				for (int h = 2; h <= (vr * 2 - 2) / 2; h++) {
-					System.out.print(" ");
-
-				}
-
+			if (vr != 1)
 				System.out.print("*");
-			}
 
 			System.out.println();
 
 		}
-
 	}
 }
