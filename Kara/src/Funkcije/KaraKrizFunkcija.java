@@ -2,36 +2,19 @@ package Funkcije;
 
 import java.util.Scanner;
 
-public class KaraKrizFunkcija {
-	void Narisi (int presledek, int zvezda, int minus, int crta) {
-		
-		
-	}
-	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in);
-		int num = 0;
+public class KaraKrizFunkcija extends IzbiraKare {
 
-		do {
-			System.out.println("Izberi stevilo med 3 in 79:");
-			num = reader.nextInt();
-		} while (num < 3 || num > 79);
-
-		if ((num % 2) == 0)
-			num = num - 1;
-
-		System.out.println("Izbrano stevilo je: " + num);
-
+	public  void IzrisKaraKriz() {
+		KaraFunkcija SirinaKriz = new KaraFunkcija();
+		SirinaKriz.IzbranoStevilo();
 		// zvezdice
-		String pr = " ";
-		String zv = "*";
+	
 		int vr = 0;
-
-		int j = 0;
 		int k;
 		int i;
 
-		for (vr = 1; vr <= num / 2; vr++) {
-			for (i = 1; i <= (num - vr); i++) {
+		for (vr = 1; vr <= SirinaKriz.num / 2; vr++) {
+			for (i = 1; i <= (SirinaKriz.num - vr); i++) {
 
 				System.out.print(" ");
 			}
@@ -64,7 +47,7 @@ public class KaraKrizFunkcija {
 
 		// sredina
 		for (vr = 1; vr <= 1; vr++) {
-			for (i = 1; i <= (num - vr) - (num / 2); i++) {
+			for (i = 1; i <= (SirinaKriz.num - vr) - (SirinaKriz.num / 2); i++) {
 
 				System.out.print(" ");
 			}
@@ -74,7 +57,7 @@ public class KaraKrizFunkcija {
 
 			}
 
-			for (int h = 1; h <= num - 2; h++) {
+			for (int h = 1; h <= SirinaKriz.num - 2; h++) {
 				System.out.print("-");
 
 			}
@@ -88,8 +71,8 @@ public class KaraKrizFunkcija {
 
 		// spodnji del
 
-		for (vr = (num / 2); vr >= 1; vr--) {
-			for (i = 1; i <= (num - vr); i++) {
+		for (vr = (SirinaKriz.num / 2); vr >= 1; vr--) {
+			for (i = 1; i <= (SirinaKriz.num - vr); i++) {
 
 				System.out.print(" ");
 			}

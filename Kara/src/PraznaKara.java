@@ -16,12 +16,9 @@ public class PraznaKara {
 		System.out.println("Izbrano stevilo je: " + num);
 
 		// zvezdice
-		String pr = " ";
-		String zv = "*";
+
 		int vr = 0;
 
-		int j = 0;
-		int k;
 		int i;
 
 		for (vr = 1; vr <= num / 2 + 1; vr++) {
@@ -30,10 +27,7 @@ public class PraznaKara {
 				System.out.print(" ");
 			}
 
-			for (k = 1; k <= 1; k++) {
-				System.out.print("*");
-
-			}
+			System.out.print("*");
 
 			for (int h = 2; h <= vr * 2 - 2; h++) {
 				System.out.print(" ");
@@ -54,10 +48,7 @@ public class PraznaKara {
 				System.out.print(" ");
 			}
 
-			for (k = 1; k <= 1; k++) {
-				System.out.print("*");
-
-			}
+			System.out.print("*");
 
 			for (int h = 2; h <= vr * 2 - 2; h++) {
 				System.out.print(" ");
