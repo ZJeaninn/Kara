@@ -3,7 +3,8 @@ package Funkcije;
 import java.util.Scanner;
 
 public class KaraFunkcija extends IzbiraKare {
-	int vr = 0;
+	int vr;
+	int i;
 
 	public void Risanje(int presledek, int zvezdica) {
 
@@ -26,9 +27,6 @@ public class KaraFunkcija extends IzbiraKare {
 		System.out.println(Sirina.num);
 
 		// zvezdice
-		int vr = 0;
-		int k;
-		int i;
 
 		for (vr = 1; vr <= Sirina.num / 2 + 1; vr++) {
 			Risanje(Sirina.num - vr, vr * 2 - 1);

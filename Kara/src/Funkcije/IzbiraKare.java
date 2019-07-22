@@ -24,10 +24,10 @@ public class IzbiraKare {
 
 	public static void main(String[] args) {
 		Scanner vnos = new Scanner(System.in);
-		System.out.println("Vnesi stevilo\n" 
-		+ "1. Izris kare\n" 
-		+ "2. Izris prazne kare\n"
-		+ "3. Izris kare s krizem.");
+		System.out.println("Izberite stevilo pred zeljenim izpisom oblike\n" 
+		+ "1: Izris kare\n" 
+		+ "2: Izris prazne kare\n"
+		+ "3: Izris kare s krizem.");
 		int m = vnos.nextInt();
 		switch (m) {
 		case 1:
