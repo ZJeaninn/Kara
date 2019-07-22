@@ -20,7 +20,7 @@ public class IzbiraKare {
 			break;
 		case 3:
 			KaraKrizFunkcija KrizKara = new KaraKrizFunkcija();
-			KrizKara.IzrisKaraKriz();
+			KrizKara.IzrisKare();
 			break;
 		default:
 			System.out.println("Niste pravilno izbrali.");
