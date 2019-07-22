@@ -2,17 +2,33 @@ package Funkcije;
 
 import java.util.Scanner;
 
-public class KaraFunkcija extends IzbiraKare {
-	int vr;
-	int i;
+public class KaraFunkcija {
 
-	public void Risanje(int presledek, int zvezdica) {
+	public int num = 0;
 
-		for (int i = 1; i <= presledek; i++) {
+	public void IzbranoStevilo() {
+		Scanner reader = new Scanner(System.in);
+
+		do {
+			System.out.println("Izberi stevilo med 3 in 79:");
+			num = reader.nextInt();
+		} while (num < 3 || num > 79);
+
+		if ((num % 2) == 0)
+			num = num - 1;
+
+		System.out.println("Izbrano stevilo je: " + num);
+	}
+
+	public void IzrisVrstice(int presledek, int zvezdica) {
+
+		int i;
+
+		for (i = 1; i <= presledek; i++) {
 			System.out.print(" ");
 		}
 
-		for (int j = 1; j <= zvezdica; j++) {
+		for (i = 1; i <= zvezdica; i++) {
 			System.out.print("*");
 		}
 
@@ -22,19 +38,19 @@ public class KaraFunkcija extends IzbiraKare {
 
 	public void IzrisKare() {
 
+		int vr;
 		KaraFunkcija Sirina = new KaraFunkcija();
 		Sirina.IzbranoStevilo();
-		System.out.println(Sirina.num);
-
+		
 		// zvezdice
 
 		for (vr = 1; vr <= Sirina.num / 2 + 1; vr++) {
-			Risanje(Sirina.num - vr, vr * 2 - 1);
+			IzrisVrstice(Sirina.num - vr, vr * 2 - 1);
 
 		}
 
-		for (vr = (Sirina.num / 2); vr >= 1; vr--) {
-			Risanje(Sirina.num - vr, vr * 2 - 1);
+		for (vr = Sirina.num / 2; vr >= 1; vr--) {
+			IzrisVrstice(Sirina.num - vr, vr * 2 - 1);
 		}
 
 	}
